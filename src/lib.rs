@@ -64,7 +64,7 @@ mod tests {
         const CAPACITY: u64 = 12345;
         const USED: u64 = 1234;
 
-        let mut builder = StorageBuilder::default();
+        let builder = StorageBuilder::default();
 
         let v = builder
             .path("/")
