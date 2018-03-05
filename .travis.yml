@@ -1,0 +1,9 @@
+services:
+  - docker
+before_script:
+  - docker-compose -f docker-compose.lint-test.yml build
+script:
+  - docker-compose -f docker-compose.lint-test.yml run lint-test
+branches:
+  only:
+    - develop
