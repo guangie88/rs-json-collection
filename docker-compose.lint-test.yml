@@ -1,6 +1,6 @@
 version: '2'
 services:
-  lint-test-extract-log:
+  lint-test:
     build:
       context: .
       dockerfile: Dockerfile-lint-test
