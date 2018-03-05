@@ -1,5 +1,5 @@
 [package]
-name = "json-collection"
+name = "rs-json-collection"
 version = "0.1.0"
 authors = ["Chen Weiguang <chen.weiguang@gmail.com>"]
 
@@ -8,3 +8,7 @@ chrono = { version = "0.4", features = ["serde"] }
 derive-getters = "0.0"
 serde = "1.0"
 serde_derive = "1.0"
+
+[lib]
+name = "rs-json-collection"
+path = "src/lib.rs"

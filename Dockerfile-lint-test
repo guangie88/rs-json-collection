@@ -1,9 +1,9 @@
 FROM guangie88/rustfmt-clippy:nightly-2018-02-26
 
 WORKDIR /app
-COPY ./Cargo.toml ./Cargo.lock ./rustfmt.toml ./
-COPY ./src/ ./src/
+COPY ./Cargo.toml ./rustfmt.toml ./
 RUN set -x \
-    && cargo fetch --locked -v \
+    && cargo fetch -v \
     && cargo clippy \
     && cargo test --no-run
+COPY ./src/ ./src/
